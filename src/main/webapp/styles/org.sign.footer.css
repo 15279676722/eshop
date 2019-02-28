@@ -1,0 +1,21 @@
+@charset "UTF-8";
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.footer-container{
+    clear: both;
+    height: 170px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    line-height: 170px;
+}
+.footer-container .footer{
+    text-align: center;
+
+}
+.footer-container .footer b{
+    font-weight: normal;
+}

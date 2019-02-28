@@ -1,0 +1,47 @@
+@charset "UTF-8";
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.include{
+    position: relative;
+    height: 420px;
+}
+
+.dialog {
+    box-shadow: 3px 3px 3px 3px gainsboro;
+    border: 1px solid #d2d2d2 ;
+    position: absolute ;
+    left: 800px;
+    top :5%;
+    width: 400px ;
+    height: 370px ;
+    background-color: #FFFFFF;
+
+}
+
+.form-row , .identify-row { border: 1px solid transparent ; margin: 5px 5px ; font-size: 20px;}
+
+.form-row:hover , .identify-row:hover { border-color: darkgrey ;}
+
+/*按钮的悬浮*/
+.submit:hover{
+    border: none;
+}
+
+.form-row label , .form-row span , .identify-row label , .identify-row span  { height: 50px ; line-height: 50px ; }
+
+.form-row label { text-align: center }
+
+.form-row span { text-align: left ;  }
+
+.form-row span input , .identify-row label input { border: none ; outline: none ;  line-height: 50px ; width:95% ; }
+
+.identify-row label input { text-align: center ; }
+
+.form-row>.x-offset-1 input[type=submit]{
+    color: #FFFFFF;
+    font-size: 20px;
+    background-color: rgba(118, 255, 0, 0.68);
+}

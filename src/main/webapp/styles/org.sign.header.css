@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.header-container{
+    height:140px;
+}
+.header-container .header >div{
+    height: 140px;
+    width: 40%;
+
+}
+.header-container .header .logo{
+    float: left;
+   padding-left: 40px;
+}
+.header-container .header .operation{
+    float: right;
+    margin-right: 30px;
+    text-align: right;
+}
+.header-container .header .operation span{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.header-container .header .operation a{
+    color: #009688;
+    font-size: 20px;
+}
+
+.header-container .header .logo img{
+    width: 130px;
+   margin-top: -20px;
+}

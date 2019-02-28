@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.taishan.electronshop.mapper.TrolleyMapper">
+    <insert id="insert" parameterType="Customer" >
+        INSERT INTO t_customers(USERNAME,PASSWORD,TELEPHONE)VALUES (#{username},#{password},#{telephone})
+    </insert>
+
+    <select id="querybyCostomer" resultType="TrolleyItem">
+        SELECT t.* FROM t_customers u right join t_trolleyitems t on u.id=t.customer_id WHERE u.username=#{username}
+
+    </select>
+    <select id="selectAllByPage" parameterType="java.util.HashMap" resultType="Customer">
+        SELECT * FROM t_customers WHERE 1=1
+        <if test="search.id!='' and search.id!=null">
+        and ID=#{search.id}
+        </if>
+        <if test="search.username!='' and search.username!=null">
+            and USERNAME=#{search.username}
+        </if>
+    </select>
+
+
+    <update id="updatePerson">
+        UPDATE t_customers SET USERNAME=#{userName},AGE=#{age},MOBILEPHONE=#{mobilePhone} WHERE ID=#{id}
+    </update>
+</mapper>

@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/*主页面的css*/
+
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+/*header部分*/
+.header-part{
+    background: #000000;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    opacity: 0.6;
+    color: #ffffff;
+}
+
+.header-part1{
+    height: 50px;
+    line-height: 50px;
+}
+.header-part1 span{
+    display: inline-block;
+    float: right;
+    padding-right: 30px;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul , li {
+    list-style: none;
+    text-decoration: none;
+    font-family:微软雅黑;
+}
+.header-part2{
+    height:150px;
+}
+.header-part2 .navigator>ul>li {
+    float: left ;
+    width:20% ;
+    font-size: 26px;
+}
+
+.header-part2 .navigator>ul{
+    margin-left: 50px;
+}
+
+.header-part2 .navigator li ul {
+    font-size: 16px;
+}
+
+/*头部图片*/
+.header-part3{
+    background-position:center  center ;
+    background-image: url("/img/header.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-bottom: 100px;
+}
+/*最外层的wrapper*/
+.wrapper{
+    width:1340px;
+    margin:0px auto;
+    text-align: center;
+}
+
+
+/*小标题样式*/
+.title {
+   display: inline-block;
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+}
+.title>span{
+    display: inline-block;
+
+}
+.title img{
+    width: 40px;
+    height: 30px;
+    position: relative;
+
+}
+
+
+
+.container{
+    width:1200px;
+    height: 400px;
+    float: right;
+    text-align: center;
+}
+.container>div{
+    float: left;
+    width: 263px;
+    height: 350px;
+    text-align: center;
+    border: #EEEEEE 1px solid;
+    margin-left: 5px ;
+    margin-right: 5px;
+}
+
+.container   a img{
+    text-align: center;
+}
+/* container xiaomicom的特殊样式*/
+.xiaomicom img{
+    width: 200px;
+    height: 200px;
+}
+/* container dell4的特殊样式*/
+.dell4 a img{
+    width: 200px;
+    height: 200px;
+
+}
+
+.container>div span {
+    width: 263px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+/*价格数字的样式：*/
+.price{
+    width:130px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+.price .unit, .price  .amount{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    float: left;
+    font-size: 24px;
+    color: red;
+}
+.buy {
+    position: relative;
+    top: 60px;
+    width: 130px;
+    height: 30px;
+    float: right;
+}
+.buy button{
+    width: 130px;
+    height: 30px;
+    border:0px;
+    background-color:red;
+    color:#ffffff;
+    border-radius:5px
+
+}
+
+/*小米5x的特殊样式*/
+.xiaomi5x .buy{
+    position: relative;
+    top: 40px;
+    width: 130px;
+    height: 30px;
+    float: right;
+}
+
+.xiaomi5x  .price{
+    width:130px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+/*华为手机样式*/
+.huawei img{
+    width: 200px;
+    height: 200px;
+}
+
+/*数码相机样式*/
+.camera img{
+    width: 200px;
+    height: 200px;
+}
+
+
+/*购物车图标样式*/
+.shopping-cart{
+    position: fixed;
+    bottom: 100px;
+    left: 0px;
+}
+.shopping-cart img{
+    width: 100px;
+    height: 100px;
+}
+/*回到顶部图标样式*/
+.top{
+    position: fixed;
+    bottom: 30px;
+    left: 0px;
+}
+.top img{
+    width: 42px;
+}
